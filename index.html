@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>A Calculator</h1>
+   
+<div class="container">
+   
+    <div id="cal">
+        <form name="forms1">
+        
+        <div class="text-container">
+            <input type="text" name="txt1" placeholder="0" id="text">
+        </div>
+
+        <div class="row first">
+            <input id="btn1" type="button" value="1">
+            <input id="btn2" type="button" value="2">
+            <input id="btn3" type="button" value="3">
+            <input id="addbtn" type="button" value="+">
+        </div>
+        <div class="row second">
+            <input id="btn4" type="button" value="4">
+            <input id="btn5" type="button" value="5">
+            <input id="btn6" type="button" value="6">
+            <input id="subbtn" type="button" value="-">
+        </div>
+        <div class="row third">
+            <input id="btn7" type="button" value="7">
+            <input id="btn8" type="button" value="8">
+            <input id="btn9" type="button" value="9">
+            <input id="divbtn" type="button" value="/">
+        </div>
+        <div class="row fourth">
+            <input  type="button" id="boldd" value="c" onclick="forms1.txt1.value=''">
+            <input id="btn0" type="button" value="0">
+            <input type="button" id="bolddd" value="=" onclick="forms1.txt1.value=eval(forms1.txt1.value)">
+            <input id="mulbtn" type="button"  value="x">
+        </div>
+
+
+        </form>
+
+    </div>
+</div>
+    <script src="script.js">
+
+    </script>
+
+    
+    
+</body>
+</html>
